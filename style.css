@@ -1,0 +1,741 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.left {
+    width: 23vw;
+    height: 88vh;
+    background-color: #121212;
+    margin: 0 10px 0 15px;
+    border-radius: 5px;
+    position: fixed;
+
+}
+
+.img2 img{
+    height: 70px;
+    width: 50px;
+}
+
+.right {
+
+    height: 1715px;
+    width: 74vw;
+
+    background: linear-gradient(to bottom, #252525 9%, #121212 30%);
+
+    margin: 0 0 0 25vw;
+    /* margin: 0 0 0 344px; */
+    border-radius: 5px;
+}
+
+header {
+    height: 10vh;
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 8;
+
+}
+
+#homeSvg {
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    margin: 0 15px 0 0;
+
+}
+
+#searchSvg {
+    height: 6.34vh;
+    width: 50px;
+    background-color: #1f1f1f;
+    border-radius: 25px 0 0 25px;
+
+
+}
+
+.SearchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.SearchBar :nth-child(4) {
+    height: 6.34vh;
+    width: 70px;
+    ;
+}
+
+#input {
+    height: 6.34vh;
+    width: 20vw;
+    background-color: #1f1f1f;
+    border: none;
+    outline: none;
+    color: #909090;
+}
+
+#singUp {
+
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    margin: 0 25px 0 0;
+    cursor: pointer;
+}
+
+#login {
+    background-color: white;
+    color: black;
+    height: 6.2vh;
+    width: 8vw;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+
+
+}
+
+#librarySvg {
+    height: 25px;
+    width: 25px;
+    filter: invert(1);
+    margin: 10px 10px;
+}
+
+#YourLibrary {
+    color: rgb(173, 169, 169);
+    margin: -35px 0px 0px 60px;
+
+}
+
+.first {
+    position: relative;
+}
+
+#plusSvg {
+    /* margin: -150px 0px 8px 280px; */
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+
+.box {
+    height: 220px;
+    width: 22vw;
+    background-color: #121212;
+    margin: 50px auto 20px;
+    border-radius: 8px;
+    overflow-y: auto;
+}
+
+.partOne {
+    height: 120px;
+    background-color: #252525;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.partOne h3 {
+    font-weight: bold;
+    margin: 12px 0 0 15px;
+    font-size: 17px;
+}
+
+.partOne h4 {
+    margin: 2px 0 0 15px;
+    font-size: 13px;
+}
+
+.partOne button {
+    background-color: white;
+    border: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 5px 0 0 15px;
+
+}
+
+.partTwo h3 {
+    font-weight: bold;
+    margin: 12px 0 0 15px;
+    font-size: 17px;
+}
+
+.partTwo h4 {
+    margin: 2px 0 0 15px;
+    font-size: 13px;
+}
+
+.partTwo button {
+    background-color: white;
+    border: none;
+    height: 30px;
+    width: 120px;
+    border-radius: 50px;
+    font-weight: bold;
+    margin: 5px 0 0 15px;
+
+}
+
+.partTwo {
+    height: 120px;
+    background-color: #252525;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.partThree {
+    height: 120px;
+    background-color: #252525;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.partFour {
+    height: 120px;
+    background-color: #252525;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.box {
+    scrollbar-width: none;
+    /* for FireFox */
+
+    -ms-overflow-style: none;
+    /*For internet Explorer and Edge*/
+
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+    /* for Chrome , safari and Opera */
+}
+
+.footer {
+    height: 100px;
+    margin: 0 0 0 8px;
+    display: flex;
+    width: 250px;
+    flex-wrap: wrap;
+    gap: 0px 20px;
+    color: rgb(173, 169, 169);
+    ;
+    font-size: 13px;
+
+}
+
+#English {
+    margin: 40px 80px 0 -50px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border: 1.3px solid white;
+    border-radius: 25px;
+    width: 100px;
+    height: 25px;
+}
+
+#login:hover {
+    transform: scale(1.05);
+}
+
+.upperLine {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    width: 100%;
+
+}
+
+.upperLine h2 {
+    position: absolute;
+    left: 18px;
+    top: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.upperLine button {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+    height: 30px;
+    width: 80px;
+    border: none;
+    background-color: transparent;
+    color: gray;
+    cursor: pointer;
+}
+
+.upperLine button:hover {
+    color: rgb(201, 194, 194);
+}
+
+.upper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+
+}
+
+.upperPhoto {
+    display: flex;
+    flex-direction: row;
+    /* gap: 40px; */
+    gap: 1.7%;
+
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+    left: 25px;
+
+
+
+}
+
+.img1 img {
+    /* width: 160px; */
+    /* height: 160px; */
+    /* width: 11.7vw;
+    height: 26vh; */
+    height: 120%;
+    width: 90%;
+    border-radius: 50%;
+
+}
+
+.img1 {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    position: relative;
+
+}
+
+.img1 h3 {
+    position: absolute;
+    left: 20px;
+    bottom: -30px;
+    color: rgb(197, 194, 194);
+    font-size: 15px;
+}
+
+.img1 div {
+    position: absolute;
+    left: 25px;
+    bottom: -50px;
+}
+
+.img2 img {
+    /* width: 160px; */
+
+    /* height: 160px; */
+    /* width: 11.7vw;
+    height: 26vh; */
+    height: 120%;
+    width: 90%;
+    border-radius: 6px;
+
+}
+
+.img2 {
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    position: relative;
+
+}
+
+.img1 div {
+    position: absolute;
+    left: 25px;
+    bottom: -50px;
+}
+
+#playButton {
+    position: absolute;
+    bottom: 15px;
+    right: 19px;
+    height: 45px;
+    cursor: pointer;
+    width: 45px;
+
+    .button {
+        margin: 0 18px 0 0;
+    }
+}
+
+#playButton {
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.musicPlayer {
+    background-color: rgb(15, 190, 221);
+    height: 60px;
+    width: 73vw;
+    margin: 0 0 0 6px;
+    /* position: absolute; */
+    position: fixed;
+    /* top: 1650px; */
+    bottom: 10px;
+
+    gap: 20px;
+    align-items: center;
+    /* justify-content:space-between; */
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+
+
+
+}
+
+.musicPlayer img {
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.playList {
+    height: 160px;
+    width: 22vw;
+
+    background-color: #252525;
+    margin: 0 auto 5px;
+    overflow-y: auto;
+    border-radius: 6px;
+    color: white;
+
+
+}
+
+.playList ol li {
+    margin: 0 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.playList::-webkit-scrollbar {
+    display: none;
+}
+
+#seekbar {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#circle {
+    height: 14px;
+    width: 14px;
+    border-radius: 25px;
+    background-color: rgb(131, 28, 28);
+    bottom: -4px;
+    position: absolute;
+    left: 0%;
+    /* transition: left 0.5s;  */
+    /* it is not working find why */
+}
+
+#songName {
+    color: black;
+    font-size: 19px;
+    margin: 0 20px;
+    /* width: 240px; */
+    position: absolute;
+    left: 10px;
+
+
+
+
+}
+
+#duration {
+    color: black;
+    margin: 0 20px;
+    /* width: 120px; */
+    position: absolute;
+    right: 10px;
+}
+
+#cross{
+    display: none;
+}
+.muso {
+    display: flex;
+    gap: 40px;
+    /* width:  150px; */
+    position: absolute;
+    left: 50%;
+
+}
+
+@media (max-width: 1220px) {
+
+    #cross{
+        display: none;
+    }
+    .right {
+        width: 70vw;
+        margin: 0 0 0 30vw;
+
+    }
+
+    .left {
+        width: 27vw;
+        /* height: 91vh; */
+    }
+
+    .box {
+        margin: 50px auto 20px;
+        overflow-y: auto;
+
+        width: 93%;
+
+    }
+
+
+
+    #seekbar {
+        width: 98%;
+    }
+
+    .playList {
+
+        width: 93%;
+    }
+
+    .upper {
+        height: 12%;
+    }
+
+    .upperMargin {
+        margin-top: 35px;
+    }
+
+    .img1 h3 {
+        font-size: 11px;
+    }
+
+    .img1 div {
+        font-size: 10px;
+    }
+
+    .box h3 {
+        font-size: 14px;
+    }
+
+    .box h4 {
+        font-size: 10px;
+    }
+
+    .footer {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    #English {
+        position: absolute;
+        left: 50px;
+        bottom: 10px;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    #cross{
+        display: block;
+        filter: invert(1);
+        position: absolute;
+        right: 10px;
+        top: 57px;
+    }
+    .left {
+        left: -100%;
+        z-index: 5;
+        width: 50vw;
+        margin: 0;
+        height: 100%;
+        transition:all 0.8s ease;
+    }
+    #English{
+        position: absolute;
+        bottom: 10px;
+        left: 120px;
+      
+
+    }
+
+    .right {
+        width: 100vw;
+        margin: 0;
+    }
+
+    .musicPlayer {
+
+        width: 100vw;
+
+    }
+
+    #seekbar {
+        width: 98%;
+    }
+
+    #hamburger {
+        cursor: pointer;
+        filter: invert(1);
+        height: 4vh;
+        width: 10vw;
+    }
+
+
+}
+
+@media (max-width:600px) {
+    #cross{
+        display: block;
+        filter: invert(1);
+        position: absolute;
+        right: 10px;
+        top: 57px;
+    }
+    header {
+
+        height: 40px;
+    }
+    .left {
+        left: -100%;
+        z-index: 5;
+        width: 50vw;
+        margin: 0;
+        height: 100%;
+        transition:all 0.8s ease;
+    }
+
+    .logo {
+        width: 27%;
+        height: 5%;
+        margin: 0 0 25px -14px;
+
+    }
+
+    #homeSvg {
+        width: 5%;
+        height: 5%;
+    }
+    #hamburger {
+        cursor: pointer;
+        filter: invert(1);
+        height: 2vh;
+        width: 8vw;
+    }
+
+    #searchSvg {
+        width: 25px;
+        height: 25px;
+        border-radius: 15px 0 0 15px;
+    }
+
+    #input {
+        height: 25px;
+        width: 30%;
+        font-size: 7px;
+    }
+
+    .SearchBar :nth-child(4) {
+        height: 25px;
+        width: 45px;
+    }
+
+    #singUp {
+        font-weight: 400;
+        font-size: 7px;
+        margin: 0 -32px 0 0;
+    }
+
+    #login {
+        font-weight: 400;
+        font-size: 7px;
+        height: 10px;
+        width: 30px;
+        border-radius: 15px;
+        margin: 0 0 0 32px;
+
+    }
+
+    .button {
+        margin: 8px;
+    }
+
+    .upperLine h2 {
+        font-size: 14px;
+    }
+
+    .upperLine button {
+        font-size: 11px;
+    }
+
+    .musicPlayer {
+
+        height: 80px;
+    }
+
+    #songName {
+        position: absolute;
+        top: 10px;
+        left: 20%;
+        font-size: 15px;
+    }
+
+    .muso {
+        position: absolute;
+        top: 30px;
+        left: 30%;
+
+    }
+
+    #duration {
+        position: absolute;
+        top: 55px;
+        right: 10px;
+    }
+}
